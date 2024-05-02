@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stag Quiz</title>
+  </head>
+  <body>
+    <main>
+      <div id="heading-section">
+        <h1>Adam</h1>
+        <p>We asked some of your mates for their favourite memories of you.</p>
+        <p>But who said what?</p>
+        <p>(Some details have been temporarily redacted for your privacy)</p>
+        <button id="startBtn" onclick="start()">Start</button>
+      </div>
+      <div id="question-section">
+        <p><b>Tap blocks to reveal the full story</b></p>
+        <br />
+        <div id="text-container"></div>
+        <br />
+        <div id="author-container">
+          <p>Who said it:</p>
+          <p id="author"></p>
+        </div>
+        <br />
+        <div id="button-container"></div>
+      </div>
+      <div id="finish-section">
+        <h2>Thanks for playing</h2>
+        <p>We hope you enjoyed the trip down memory lane!</p>
+        <button onclick="restart()">Back to Start</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
