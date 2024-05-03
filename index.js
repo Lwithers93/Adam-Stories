@@ -63,7 +63,7 @@ const restart = () => {
 
 const reveal = () => {
   document.querySelectorAll("span").forEach((span) => {
-    span.style.backgroundColor = "transparent"; // Use "transparent" instead of "none"
+     span.classList.add("show"); // Use "transparent" instead of "none"
   });
   const revealBtn = document.getElementById("revealBtn");
   revealBtn.innerText = "Hide All";
@@ -72,7 +72,7 @@ const reveal = () => {
 
 const hide = () => {
   document.querySelectorAll("span").forEach((span) => {
-    span.style.backgroundColor = "black"; // Use "transparent" instead of "none"
+    span.classList.remove("show"); // Use "transparent" instead of "none"
   });
   const revealBtn = document.getElementById("revealBtn");
 
