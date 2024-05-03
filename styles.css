@@ -16,6 +16,9 @@ html, body {
 span {
   background-color: var(--text-color);
 }
+.show {
+  background-color: transparent;
+}
 button {
   padding: 6px;
   font-family: sans-serif;
