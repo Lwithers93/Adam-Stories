@@ -90,7 +90,8 @@ const renderQuestion = (number) => {
   author.innerHTML = questionContent[number].author;
   document.querySelectorAll("span").forEach((span) => {
     span.addEventListener("click", (e) => {
-      e.target.style.backgroundColor = "transparent"; // Use "transparent" instead of "none"
+     e.target.classList.toggle("show"); 
+     // e.target.style.backgroundColor = "transparent"; // Use "transparent" instead of "none"
     });
   });
   renderBtns();
